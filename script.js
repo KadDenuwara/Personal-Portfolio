@@ -336,7 +336,7 @@ class InteractiveEffectsManager {
 // Typing Animation for Hero Section
 class TypingAnimation {
     constructor() {
-        this.text = "I am an undergraduate in Chemical and Process Engineering at the University of Moratuwa, while also pursuing an external degree in Information Systems at the same university.";
+        this.text = "I am an undergraduate in Chemical and Process Engineering at the University of Moratuwa, while also pursuing an external degree in Information Systems at the same university";
         this.element = document.querySelector('.hero-subtitle');
         this.speed = 50;
         this.currentIndex = 0;
