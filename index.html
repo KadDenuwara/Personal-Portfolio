@@ -3,22 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kavindu Denuwara - Portfolio</title>
+    <title>Kavindu Denuwara - Business Analyst</title>
+    <meta name="description" content="Kavindu Denuwara — Business Analyst bridging Engineering, Data Analysis and IT.">
     <link rel="stylesheet" href="./style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-brand">
-                <span class="brand-text"><a href="#home" style="text-decoration: none; color: white;">Kavindu Denuwara</a></span>
+                <span class="brand-text">
+                    <a href="#home">
+                        Kavindu Denuwara
+                        <span class="brand-tagline">Business Analyst</span>
+                    </a>
+                </span>
             </div>
             <div class="nav-menu" id="nav-menu">
                 <a href="#about" class="nav-link">About</a>
                 <a href="#education" class="nav-link">Education</a>
                 <a href="#skills" class="nav-link">Skills</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#achievements" class="nav-link">Achievements</a>
                 <a href="#volunteering" class="nav-link">Volunteering</a>
@@ -37,80 +44,74 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="molecule"></div>
-            <div class="circuit"></div>
-            <div class="floating-elements">
-                <div class="element element-1">🧪</div>
-                <div class="element element-2">💻</div>
-                <div class="element element-3">⚙️</div>
-                <div class="element element-4">📊</div>
-            </div>
-        </div>
         <div class="hero-content">
             <div class="profile-section">
                 <div class="profile-image-container">
                     <div class="profile-image-wrapper">
-                        <img src="\media\Profile.jpg" alt="Kavindu Denuwara" class="profile-image">
-                        <div class="profile-ring"></div>
-                        <div class="profile-glow"></div>
+                        <img src="/media/Profile.jpg" alt="Kavindu Denuwara" class="profile-image">
                     </div>
                 </div>
                 <div class="profile-info">
-                    <h1 class="hero-title fade-in">Kavindu Denuwara</h1>
-                    <p class="hero-subtitle fade-in">I am an undergraduate in Chemical and Process Engineering at the University of Moratuwa, while also pursuing an external degree in Information Systems at the same university. With a strong foundation in mathematics, physics, programming, and data science, I thrive at the intersection of engineering and digital technologies.</p>
-                    <div class="hero-cta fade-in">
-                        <a href="#projects" class="cta-button primary">Explore My Work</a>
+                    <span class="eyebrow">Business Analyst</span>
+                    <h1 class="hero-title">Kavindu Denuwara</h1>
+                    <p class="hero-role">Engineering <span class="divider">&middot;</span> Data Analysis <span class="divider">&middot;</span> IT</p>
+                    <p class="hero-subtitle">I connect engineering rigor with data-driven insight and IT capability to solve real business problems. Chemical & Process Engineering undergraduate at the University of Moratuwa, pursuing an external BIT in Information Systems, with hands-on experience in process analysis, data analytics, and systems thinking.</p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="cta-button primary">View Projects</a>
                         <a href="#contact" class="cta-button secondary">Get In Touch</a>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="section">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <div class="section-header">
+                <span class="section-eyebrow">About</span>
+                <h2 class="section-title">A Business Analyst's Perspective</h2>
+            </div>
             <div class="about-content">
                 <p class="about-description">
-                    3rd Year <strong> Chemical and Process Engineering </strong> Undergraduate at the University of Moratuwa with strong interests in production and process engineering. Skilled in Information Technology. Currently pursuing a <strong>BIT in Information Systems</strong> alongside engineering studies.
+                    3rd Year <strong>Chemical and Process Engineering</strong> undergraduate at the University of Moratuwa, currently pursuing a <strong>BIT in Information Systems</strong> alongside my engineering studies. This dual foundation lets me approach problems the way a business analyst does: understand the process, read the data, and translate both into decisions and systems that work.
                 </p>
-                
-                <div class="dual-identity">
-                    <div class="identity-card chemical">
-                        <div class="card-header">
-                            <i class="fas fa-flask"></i>
-                            <h3>Chemical Engineering Side</h3>
-                        </div>
-                        <div class="card-content">
-                            <ul>
-                                <li>Process Design & Optimization</li>
-                                <li>Heat Transfer & Mass Transfer</li>
-                                <li>Reaction Engineering</li>
-                                <li>Industrial Equipment Design</li>
-                                <li>Sustainability & Green Engineering</li>
-                            </ul>
-                        </div>
+
+                <div class="pillars">
+                    <div class="pillar-card">
+                        <div class="pillar-icon"><i class="fas fa-industry"></i></div>
+                        <h3>Engineering</h3>
+                        <ul>
+                            <li>Process Design &amp; Optimization</li>
+                            <li>Feasibility &amp; Cost Analysis</li>
+                            <li>Industrial Equipment Design</li>
+                            <li>Lean &amp; Six Sigma Principles</li>
+                            <li>Sustainability &amp; Process Improvement</li>
+                        </ul>
                     </div>
-                    
-                    <div class="identity-card it">
-                        <div class="card-header">
-                            <i class="fas fa-code"></i>
-                            <h3>IT Side</h3>
-                        </div>
-                        <div class="card-content">
-                            <ul>
-                                <li>Information Systems Design</li>
-                                <li>Data Analytics & Visualization</li>
-                                <li>Web Development</li>
-                                <li>Database Management</li>
-                                <li>Software Engineering</li>
-                            </ul>
-                        </div>
+
+                    <div class="pillar-card">
+                        <div class="pillar-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>Data Analysis</h3>
+                        <ul>
+                            <li>Data Cleaning &amp; Visualization</li>
+                            <li>Business Intelligence (Power BI)</li>
+                            <li>Statistical &amp; Predictive Analysis</li>
+                            <li>Excel Analytics</li>
+                            <li>Data-Driven Decision Making</li>
+                        </ul>
+                    </div>
+
+                    <div class="pillar-card">
+                        <div class="pillar-icon"><i class="fas fa-server"></i></div>
+                        <h3>IT &amp; Systems</h3>
+                        <ul>
+                            <li>Information Systems Design</li>
+                            <li>Database Management</li>
+                            <li>Web Development</li>
+                            <li>Software Development</li>
+                            <li>Systems Analysis</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -120,7 +121,10 @@
     <!-- Education Section -->
     <section id="education" class="section bg-alternate">
         <div class="container">
-            <h2 class="section-title">Education Journey</h2>
+            <div class="section-header">
+                <span class="section-eyebrow">Education</span>
+                <h2 class="section-title">Academic Journey</h2>
+            </div>
             <div class="education-grid">
                 <!-- Current Studies -->
                 <div class="education-category">
@@ -132,7 +136,7 @@
                         <div class="education-card current">
                             <div class="card-header">
                                 <div class="degree-icon">
-                                    <i class="fas fa-flask"></i>
+                                    <i class="fas fa-industry"></i>
                                 </div>
                                 <div class="degree-info">
                                     <h4>BSc (Hons) in Chemical and Process Engineering</h4>
@@ -145,7 +149,7 @@
                                     <i class="fas fa-calendar"></i>
                                     <span>2023 – Ongoing</span>
                                 </div>
-                                <p class="description">Specializing in process engineering, industrial design, and sustainable chemical processes.</p>
+                                <p class="description">Specializing in process engineering, industrial design, and sustainable chemical processes — the analytical backbone for data-driven process improvement.</p>
                                 <div class="specializations">
                                     <span class="specialization-tag">Process Engineering</span>
                                     <span class="specialization-tag">Industrial Design</span>
@@ -153,11 +157,11 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="education-card current">
                             <div class="card-header">
                                 <div class="degree-icon">
-                                    <i class="fas fa-code"></i>
+                                    <i class="fas fa-database"></i>
                                 </div>
                                 <div class="degree-info">
                                     <h4>BIT in Information Systems</h4>
@@ -170,7 +174,7 @@
                                     <i class="fas fa-calendar"></i>
                                     <span>2024 – Ongoing</span>
                                 </div>
-                                <p class="description">Developing expertise in information systems, database management, and software development.</p>
+                                <p class="description">Developing expertise in information systems, database management, and software development to complement engineering and data analysis skills.</p>
                                 <div class="specializations">
                                     <span class="specialization-tag">Database Management</span>
                                     <span class="specialization-tag">Software Development</span>
@@ -180,7 +184,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Academic Achievements -->
                 <div class="education-category">
                     <h3 class="category-title">
@@ -216,7 +220,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="education-card achievement">
                             <div class="card-header">
                                 <div class="degree-icon">
@@ -254,45 +258,48 @@
     <!-- Skills Section -->
     <section id="skills" class="section">
         <div class="container">
-            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="section-header">
+                <span class="section-eyebrow">Skills</span>
+                <h2 class="section-title">Skills &amp; Expertise</h2>
+            </div>
             <div class="skills-grid">
                 <div class="skill-category">
                     <div class="category-header">
                         <i class="fas fa-tools"></i>
-                        <h3>Technical Skills</h3>
+                        <h3>Technical &amp; Analytical</h3>
                     </div>
                     <div class="skills-list">
-                        <span class="skill-tag">Engineering Practices</span>
-                        <span class="skill-tag">Production Engineer</span>
+                        <span class="skill-tag">Business &amp; Process Analysis</span>
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">Excel Analytics</span>
                         <span class="skill-tag">Aspen Plus</span>
                         <span class="skill-tag">SolidWorks</span>
-                        <span class="skill-tag">Power BI</span>
-                        <span class="skill-tag">Excel</span>
+                        <span class="skill-tag">Engineering Practices</span>
                     </div>
                 </div>
-                
+
                 <div class="skill-category">
                     <div class="category-header">
                         <i class="fas fa-users"></i>
                         <h3>Soft Skills</h3>
                     </div>
                     <div class="skills-list">
-                        <span class="skill-tag">Teamwork</span>
+                        <span class="skill-tag">Stakeholder Communication</span>
                         <span class="skill-tag">Leadership</span>
                         <span class="skill-tag">Project Management</span>
-                        <span class="skill-tag">Communication</span>
                         <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Teamwork</span>
                     </div>
                 </div>
-                
+
                 <div class="skill-category">
                     <div class="category-header">
                         <i class="fas fa-heart"></i>
-                        <h3>Interests</h3>
+                        <h3>Focus Areas</h3>
                     </div>
                     <div class="skills-list">
-                        <span class="skill-tag">Process Engineering</span>
-                        <span class="skill-tag">Production Engineering</span>
+                        <span class="skill-tag">Process Optimization</span>
+                        <span class="skill-tag">Data-Driven Decisions</span>
                         <span class="skill-tag">IT System Management</span>
                         <span class="skill-tag">Sustainability</span>
                         <span class="skill-tag">Innovation</span>
@@ -303,25 +310,22 @@
     </section>
 
     <!-- Certifications Section -->
-    <!-- Add this section after the Skills section and before the Projects section -->
-
     <section id="certifications" class="section bg-alternate">
         <div class="container">
-            <h2 class="section-title">Certifications</h2>
+            <div class="section-header">
+                <span class="section-eyebrow">Certifications</span>
+                <h2 class="section-title">Certifications</h2>
+            </div>
             <div class="certifications-grid">
-                
-                <!-- Example Certificate 1 -->
+
                 <div class="certificate-card">
                     <div class="certificate-image-container">
-                        <img src="/media/datascience.png" alt="Course Certificate" class="certificate-image">
+                        <img src="/media/datascience.png" alt="Data Science Methodology Certificate" class="certificate-image">
                         <div class="certificate-overlay">
                             <i class="fas fa-search-plus"></i>
                         </div>
                     </div>
                     <div class="certificate-content">
-                        <div class="certificate-badge">
-                            <i class="fas fa-certificate"></i>
-                        </div>
                         <h3 class="certificate-title">Data Science Methodology</h3>
                         <p class="certificate-provider">
                             <i class="fab fa-coursera"></i>
@@ -344,7 +348,7 @@
                         <div class="certificate-actions">
                             <a href="path/to/certificate.pdf" class="cert-btn primary" target="_blank">
                                 <i class="fas fa-eye"></i>
-                                View Certificate
+                                View
                             </a>
                             <a href="https://coursera.org/verify/your-certificate-id" class="cert-btn secondary" target="_blank">
                                 <i class="fas fa-check-circle"></i>
@@ -354,18 +358,14 @@
                     </div>
                 </div>
 
-                <!-- Example Certificate 2 -->
                 <div class="certificate-card">
                     <div class="certificate-image-container">
-                        <img src="/media/deeplearning.png" alt="Course Certificate" class="certificate-image">
+                        <img src="/media/deeplearning.png" alt="Deep Learning Specialization Certificate" class="certificate-image">
                         <div class="certificate-overlay">
                             <i class="fas fa-search-plus"></i>
                         </div>
                     </div>
                     <div class="certificate-content">
-                        <div class="certificate-badge">
-                            <i class="fas fa-certificate"></i>
-                        </div>
                         <h3 class="certificate-title">Deep Learning Specialization</h3>
                         <p class="certificate-provider">
                             <i class="fab fa-coursera"></i>
@@ -383,12 +383,12 @@
                         <div class="certificate-skills">
                             <span class="cert-skill-tag">Neural Networks</span>
                             <span class="cert-skill-tag">Predictive Modeling</span>
-                            <span class="cert-skill-tag">ensorFlow/Keras</span>
+                            <span class="cert-skill-tag">TensorFlow/Keras</span>
                         </div>
                         <div class="certificate-actions">
                             <a href="path/to/certificate2.pdf" class="cert-btn primary" target="_blank">
                                 <i class="fas fa-eye"></i>
-                                View Certificate
+                                View
                             </a>
                             <a href="https://coursera.org/verify/your-certificate-id-2" class="cert-btn secondary" target="_blank">
                                 <i class="fas fa-check-circle"></i>
@@ -398,32 +398,27 @@
                     </div>
                 </div>
 
-                <!-- Example Certificate 2 -->
                 <div class="certificate-card">
                     <div class="certificate-image-container">
-                        <img src="/media/excelanalysis.png" alt="Course Certificate" class="certificate-image">
+                        <img src="/media/excelanalysis.png" alt="Data Analysis with Excel Certificate" class="certificate-image">
                         <div class="certificate-overlay">
                             <i class="fas fa-search-plus"></i>
                         </div>
                     </div>
                     <div class="certificate-content">
-                        <div class="certificate-badge">
-                            <i class="fas fa-certificate"></i>
-                        </div>
-                        <h3 class="certificate-title">Data for Analysis with Microsoft Excel</h3>
+                        <h3 class="certificate-title">Data Analysis with Microsoft Excel</h3>
                         <p class="certificate-provider">
                             <i class="fab fa-coursera"></i>
                             Coursera
                         </p>
                         <p class="certificate-description">
-                            Developed proficiency in data cleaning, visualization, and statistical analysis using Excel’s advanced tools and functions for informed business insights.
+                            Developed proficiency in data cleaning, visualization, and statistical analysis using Excel's advanced tools and functions for informed business insights.
                         </p>
                         <div class="certificate-meta">
                             <div class="meta-item">
                                 <i class="fas fa-calendar"></i>
                                 <span>Completed: October 2025</span>
                             </div>
-                            
                         </div>
                         <div class="certificate-skills">
                             <span class="cert-skill-tag">Data Analysis</span>
@@ -433,7 +428,7 @@
                         <div class="certificate-actions">
                             <a href="path/to/certificate2.pdf" class="cert-btn primary" target="_blank">
                                 <i class="fas fa-eye"></i>
-                                View Certificate
+                                View
                             </a>
                             <a href="https://coursera.org/verify/your-certificate-id-2" class="cert-btn secondary" target="_blank">
                                 <i class="fas fa-check-circle"></i>
@@ -443,18 +438,14 @@
                     </div>
                 </div>
 
-                <!-- Example Certificate 2 -->
                 <div class="certificate-card">
                     <div class="certificate-image-container">
-                        <img src="/media/leansixsigma.png" alt="Course Certificate" class="certificate-image">
+                        <img src="/media/leansixsigma.png" alt="Lean Six Sigma White Belt Certificate" class="certificate-image">
                         <div class="certificate-overlay">
                             <i class="fas fa-search-plus"></i>
                         </div>
                     </div>
                     <div class="certificate-content">
-                        <div class="certificate-badge">
-                            <i class="fas fa-certificate"></i>
-                        </div>
                         <h3 class="certificate-title">Lean Six Sigma White Belt Certification</h3>
                         <p class="certificate-provider">
                             <i class="fab fa-coursera"></i>
@@ -468,7 +459,6 @@
                                 <i class="fas fa-calendar"></i>
                                 <span>Completed: August 2025</span>
                             </div>
-                            
                         </div>
                         <div class="certificate-skills">
                             <span class="cert-skill-tag">Process Optimization</span>
@@ -478,7 +468,7 @@
                         <div class="certificate-actions">
                             <a href="path/to/certificate2.pdf" class="cert-btn primary" target="_blank">
                                 <i class="fas fa-eye"></i>
-                                View Certificate
+                                View
                             </a>
                             <a href="https://coursera.org/verify/your-certificate-id-2" class="cert-btn secondary" target="_blank">
                                 <i class="fas fa-check-circle"></i>
@@ -487,18 +477,20 @@
                         </div>
                     </div>
                 </div>
-                <!-- Add more certificate cards as needed -->
-                
+
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section bg-alternate">
+    <section id="projects" class="section">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
+            <div class="section-header">
+                <span class="section-eyebrow">Projects</span>
+                <h2 class="section-title">Selected Projects</h2>
+            </div>
             <div class="projects-grid">
-                <div class="project-card chemical-project">
+                <div class="project-card">
                     <div class="project-icon">
                         <i class="fas fa-fire"></i>
                     </div>
@@ -507,10 +499,11 @@
                     <div class="project-tags">
                         <span class="tag">Aspen Plus</span>
                         <span class="tag">Heat Transfer</span>
+                        <span class="tag">Cost Optimization</span>
                     </div>
                 </div>
-                
-                <div class="project-card chemical-project">
+
+                <div class="project-card">
                     <div class="project-icon">
                         <i class="fas fa-industry"></i>
                     </div>
@@ -521,8 +514,8 @@
                         <span class="tag">Mass Transfer</span>
                     </div>
                 </div>
-                
-                <div class="project-card chemical-project">
+
+                <div class="project-card">
                     <div class="project-icon">
                         <i class="fas fa-cube"></i>
                     </div>
@@ -533,37 +526,25 @@
                         <span class="tag">3D Modeling</span>
                     </div>
                 </div>
-                
-                <div class="project-card chemical-project">
+
+                <div class="project-card">
                     <div class="project-icon">
                         <i class="fas fa-chart-bar"></i>
                     </div>
-                    <h3>Polylactic Plant Design</h3>
+                    <h3>Polylactic Plant Design &amp; Feasibility</h3>
                     <p>Designed a PLA production plant using corn starch as the raw material. Conducted feasibility study, mass and energy balance, and utility requirement analysis.</p>
                     <div class="project-tags">
                         <span class="tag">Plant Design</span>
                         <span class="tag">Feasibility Analysis</span>
                     </div>
                 </div>
-                
-                <!--div class="project-card it-project">
-                    <div class="project-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h3>Industrial Database System</h3>
-                    <p>Designed and implemented database systems for managing chemical plant operations, inventory, and quality control data.</p>
-                    <div class="project-tags">
-                        <span class="tag">Database Design</span>
-                        <span class="tag">SQL</span>
-                    </div>
-            </div-->
-                
-                <div class="project-card it-project">
+
+                <div class="project-card">
                     <div class="project-icon">
                         <i class="fas fa-globe"></i>
                     </div>
                     <h3>Company Official Website</h3>
-                    <p>Built the official website for LANKA ASHOK LEYLAND PLC for shwcasing their wide range if product and services.</p>
+                    <p>Built the official website for LANKA ASHOK LEYLAND PLC, showcasing their wide range of products and services.</p>
                     <div class="project-tags">
                         <span class="tag">Web Development</span>
                         <span class="tag">Backend Development</span>
@@ -574,42 +555,45 @@
     </section>
 
     <!-- Achievements Section -->
-    <section id="achievements" class="section">
+    <section id="achievements" class="section bg-alternate">
         <div class="container">
-            <h2 class="section-title">Achievements & Competitions</h2>
+            <div class="section-header">
+                <span class="section-eyebrow">Achievements</span>
+                <h2 class="section-title">Achievements &amp; Competitions</h2>
+            </div>
             <div class="achievements-grid">
-                <div class="achievement-card initiative">
+                <div class="achievement-card">
                     <div class="achievement-header">
-                        <div class="achievement-badge ongoing">Ongoing</div>
+                        <div class="achievement-badge">Ongoing</div>
                         <div class="achievement-year">Ongoing</div>
                     </div>
                     <div class="achievement-content">
-                        <h3 class="competition-name">IESL - UIY Competiton <br> 2025</h3>
+                        <h3 class="competition-name">IESL - UIY Competition <br> 2025</h3>
                         <p class="achievement-description">Organized by IESL, this competition empowers engineering students to showcase creativity and technical skills, developing innovative solutions that address practical, real-world challenges.</p>
                         <div class="project-highlight">
                             <h4>Project: GREENGUARD LITE</h4>
                             <p>A device fills a critical gap with an affordable solution for communities where air quality monitoring is out of reach.</p>
                         </div>
-                    
+
                         <div class="skills-used">
                             <span class="skill-tag">Sustainability Process</span>
                             <span class="skill-tag">Electronics</span>
                             <span class="skill-tag">Environmental Engineering</span>
                             <span class="skill-tag">SDG Goals</span>
                         </div>
-                        
+
                         <!-- Expandable Content -->
                         <div class="expandable-content">
                             <div class="full-description">
                                 <h4>Competition Journey</h4>
                                 <p>Our journey in the UIY competition, organized by the Institution of Engineers Sri Lanka (IESL), has been an inspiring experience. It challenged us to combine creativity and technical expertise to address real-world issues. Through this platform, we developed our affordable air quality monitoring device, striving to empower communities and promote healthier living environments.</p>
-                                
+
                                 <h4>GREENGUARD LITE</h4>
-                                <p>This device fills a critical gap with an affordable solution for communities where air quality monitoring is out of reach.Our aim is empowering individuals to take immediate actions to help preventing a range of health issues from simple headaches to serious illnesses.</p>
-                                
+                                <p>This device fills a critical gap with an affordable solution for communities where air quality monitoring is out of reach. Our aim is empowering individuals to take immediate actions to help preventing a range of health issues from simple headaches to serious illnesses.</p>
+
                                 <h4>Technical Challenges</h4>
                                 <p>Designing a low-cost yet accurate sensor calibration system was a key challenge. Balancing affordability with precision required implementing advanced algorithms to filter noise, ensuring reliable air quality measurements in diverse environments.</p>
-                                
+
                                 <h4>Team Contributions</h4>
                                 <div class="contributors">
                                     <div class="contributor">
@@ -629,18 +613,8 @@
                                     </div>
                                 </div>
                             </div>
-                            
-                            <div class="project-gallery">
-                                <h4>Gallery</h4>
-                                <div class="achievement-gallery">
-                                    <img src="https://via.placeholder.com/300x200/2563eb/ffffff?text=App+Home+Screen" alt="Dora App Home Screen">
-                                    <img src="https://via.placeholder.com/300x200/7c3aed/ffffff?text=Music+Player" alt="Music Player Interface">
-                                    <img src="https://via.placeholder.com/300x200/06b6d4/ffffff?text=AI+Chat+Feature" alt="AI Chat Feature">
-                                    <img src="https://via.placeholder.com/300x200/10b981/ffffff?text=Team+Presentation" alt="Team Presentation">
-                                </div>
-                            </div>
                         </div>
-                        
+
                         <button class="read-more-btn" onclick="toggleReadMore(this)">
                             <span class="btn-text">Read More</span>
                             <i class="fas fa-chevron-down"></i>
@@ -648,9 +622,9 @@
                     </div>
                 </div>
 
-                <div class="achievement-card competition">
+                <div class="achievement-card">
                     <div class="achievement-header">
-                        <div class="achievement-badge top-20">Top 20</div>
+                        <div class="achievement-badge">Top 20</div>
                         <div class="achievement-year">2025</div>
                     </div>
                     <div class="achievement-content">
@@ -660,26 +634,26 @@
                             <h4>Project: Smart Waste Bin</h4>
                             <p>A design of smart waste bin to keep waste dry, odor-free, and hassle-free using our knowledge of humidification and airflow control.</p>
                         </div>
-                        
+
                         <div class="skills-used">
                             <span class="skill-tag">3D Design</span>
                             <span class="skill-tag">Environmental Engineering</span>
                             <span class="skill-tag">Process Engineering</span>
                             <span class="skill-tag">Team Leadership</span>
                         </div>
-                        
+
                         <!-- Expandable Content -->
                         <div class="expandable-content">
                             <div class="full-description">
                                 <h4>Competition Journey</h4>
                                 <p>The IESE Grant Scheme competition at the University of Moratuwa was a remarkable platform that encouraged us to transform our innovative idea into a viable product. Competing among talented peers, we showcased the Smart Waste Bin, gaining valuable feedback and mentorship. This journey strengthened our vision to create sustainable, user-friendly solutions for real-world waste management.</p>
-                                
+
                                 <h4>Smart Food Waste Bin</h4>
                                 <p>We at Chemovate designed the Smart Waste Bin to keep waste dry, odor-free, and hassle-free. Using our knowledge of humidification and airflow control, we created a system that extends waste storage time while collecting moisture efficiently. We brought our concept to life with Blender, focusing on both function and sleek, modern design. Ideal for homes, cafes, and institutions that care about hygiene and smart living.</p>
-                                
+
                                 <h4>Technical Challenges</h4>
                                 <p>Designing the Smart Waste Bin presented several challenges. Maintaining waste in a dry, odor-free state required precise airflow control and effective humidification management. Balancing efficiency with affordability was another hurdle, ensuring the system worked reliably without overcomplicating the design. Overcoming these challenges enhanced our problem-solving skills and shaped a more practical, scalable solution.</p>
-                                
+
                                 <h4>Team Contributions</h4>
                                 <div class="contributors">
                                     <div class="contributor">
@@ -691,21 +665,10 @@
                                     <div class="contributor">
                                         <strong>Chanuka Dhananjaya</strong>
                                     </div>
-                                    
-                                </div>
-                            </div>
-                            
-                            <div class="project-gallery">
-                                <h4>Gallery</h4>
-                                <div class="achievement-gallery">
-                                    <img src="https://via.placeholder.com/300x200/2563eb/ffffff?text=App+Home+Screen" alt="Dora App Home Screen">
-                                    <img src="https://via.placeholder.com/300x200/7c3aed/ffffff?text=Music+Player" alt="Music Player Interface">
-                                    <img src="https://via.placeholder.com/300x200/06b6d4/ffffff?text=AI+Chat+Feature" alt="AI Chat Feature">
-                                    <img src="https://via.placeholder.com/300x200/10b981/ffffff?text=Team+Presentation" alt="Team Presentation">
                                 </div>
                             </div>
                         </div>
-                        
+
                         <button class="read-more-btn" onclick="toggleReadMore(this)">
                             <span class="btn-text">Read More</span>
                             <i class="fas fa-chevron-down"></i>
@@ -713,9 +676,9 @@
                     </div>
                 </div>
 
-                <div class="achievement-card competition">
+                <div class="achievement-card">
                     <div class="achievement-header">
-                        <div class="achievement-badge top-10">Top 10</div>
+                        <div class="achievement-badge">Top 10</div>
                         <div class="achievement-year">2024</div>
                     </div>
                     <div class="achievement-content">
@@ -725,23 +688,23 @@
                             <h4>Project: Waste to Value Project for Plastic</h4>
                             <p>We presented this project as a solution to nonbiodegradable waste in landfills in Sri Lanka.</p>
                         </div>
-                    
+
                         <div class="skills-used">
                             <span class="skill-tag">Process Engineering</span>
                             <span class="skill-tag">Presentation Skills</span>
                             <span class="skill-tag">Innovation</span>
                             <span class="skill-tag">Team Leadership</span>
                         </div>
-                        
+
                         <!-- Expandable Content -->
                         <div class="expandable-content">
                             <div class="full-description">
                                 <h4>Project Overview</h4>
                                 <p>As a team, we participated in the Innojet competition 2024 which is held parallel to the Kandy conference. In this competition, we were selected as a top 10 finalist among 110+ competitors.</p>
-                                
+
                                 <h4>Technical Implementation</h4>
-                                <p>Under the supervision of Dr. Dilhara Sethunga, we present a waste to energy project with Al driven technology to build a sustainable circular economy in Sri Lanka. We presented this project as a solution to nonbiodegradable waste in landfills in our country. In our solution, waste is converted to valuable resources that have a promising market in both local and global markets.</p>
-                                
+                                <p>Under the supervision of Dr. Dilhara Sethunga, we present a waste to energy project with AI driven technology to build a sustainable circular economy in Sri Lanka. We presented this project as a solution to nonbiodegradable waste in landfills in our country. In our solution, waste is converted to valuable resources that have a promising market in both local and global markets.</p>
+
                                 <h4>Team Contributions</h4>
                                 <div class="contributors">
                                     <div class="contributor">
@@ -755,27 +718,18 @@
                                     </div>
                                 </div>
                             </div>
-                            
-                            <div class="project-gallery">
-                                <h4>Gallery</h4>
-                                <div class="achievement-gallery">
-                                    <img src="https://media.licdn.com/dms/image/v2/D562DAQEl5u6hLJ5I1Q/profile-treasury-image-shrink_800_800/B56ZhPVGf7G4Ak-/0/1753677589680?e=1758960000&v=beta&t=IjJ32uM-ssqvIrTrwqylK067e_nfYtXhrgnReHrckwk" alt="Process Flow Diagram">
-                                    <img src="https://via.placeholder.com/300x200/7c3aed/ffffff?text=Simulation+Results" alt="Simulation Results">
-                                    <img src="https://via.placeholder.com/300x200/06b6d4/ffffff?text=Team+Presentation" alt="Team Presentation">
-                                </div>
-                            </div>
                         </div>
-                        
+
                         <button class="read-more-btn" onclick="toggleReadMore(this)">
                             <span class="btn-text">Read More</span>
                             <i class="fas fa-chevron-down"></i>
                         </button>
                     </div>
                 </div>
-                
-                <div class="achievement-card competition">
+
+                <div class="achievement-card">
                     <div class="achievement-header">
-                        <div class="achievement-badge top-20">Top 20</div>
+                        <div class="achievement-badge">Top 20</div>
                         <div class="achievement-year">2023</div>
                     </div>
                     <div class="achievement-content">
@@ -791,19 +745,19 @@
                             <span class="skill-tag">Firebase</span>
                             <span class="skill-tag">Android Development</span>
                         </div>
-                        
+
                         <!-- Expandable Content -->
                         <div class="expandable-content">
                             <div class="full-description">
                                 <h4>Competition Journey</h4>
                                 <p>The Idealize Competition was one of the most challenging and rewarding experiences of my academic career. Starting with over 300 teams from universities across the country, we had to demonstrate not just technical skills, but also innovation, teamwork, and the ability to solve real-world problems. The competition spanned several months with multiple elimination rounds, each more demanding than the last.</p>
-                                
+
                                 <h4>Dora App Development</h4>
                                 <p>As part of our work, we built 'Dora', an entertainment app that users can listen to songs, watch shorts, and chat with others. It also includes AI chat and an AI image assistant. We developed it using Java, Kotlin, and Firebase. The app features a modern Material Design interface, real-time messaging capabilities, and integrated AI services for enhanced user experience.</p>
-                                
+
                                 <h4>Technical Challenges</h4>
                                 <p>One of the biggest challenges was integrating multiple services seamlessly - music streaming, video playback, real-time chat, and AI functionality. We had to optimize for performance while maintaining a smooth user experience. The AI integration required extensive research and implementation of machine learning models for both chat and image processing features.</p>
-                                
+
                                 <h4>Team Contributions</h4>
                                 <div class="contributors">
                                     <div class="contributor">
@@ -818,21 +772,11 @@
                                     <div class="contributor">
                                         <strong>Jayasri Akmeemana</strong>
                                     </div>
-                                
-                                </div>
-                            </div>
-                            
-                            <div class="project-gallery">
-                                <h4>Gallery</h4>
-                                <div class="achievement-gallery">
-                                    <img src="https://via.placeholder.com/300x200/2563eb/ffffff?text=App+Home+Screen" alt="Dora App Home Screen">
-                                    <img src="https://via.placeholder.com/300x200/7c3aed/ffffff?text=Music+Player" alt="Music Player Interface">
-                                    <img src="https://via.placeholder.com/300x200/06b6d4/ffffff?text=AI+Chat+Feature" alt="AI Chat Feature">
-                                    <img src="https://via.placeholder.com/300x200/10b981/ffffff?text=Team+Presentation" alt="Team Presentation">
+
                                 </div>
                             </div>
                         </div>
-                        
+
                         <button class="read-more-btn" onclick="toggleReadMore(this)">
                             <span class="btn-text">Read More</span>
                             <i class="fas fa-chevron-down"></i>
@@ -844,19 +788,22 @@
     </section>
 
     <!-- Volunteering Section -->
-    <section id="volunteering" class="section bg-alternate">
+    <section id="volunteering" class="section">
         <div class="container">
-            <h2 class="section-title">Volunteering & Leadership</h2>
+            <div class="section-header">
+                <span class="section-eyebrow">Volunteering</span>
+                <h2 class="section-title">Volunteering &amp; Leadership</h2>
+            </div>
             <div class="volunteering-grid">
                 <div class="volunteer-card">
                     <div class="volunteer-icon">
                         <i class="fas fa-users-cog"></i>
                     </div>
                     <h3>IESL Student Chapter</h3>
-                    <p class="volunteer-role">Assistant Director in PR<br> Public Relations Pillar Member</p>
+                    <p class="volunteer-role">Assistant Director, PR &amp; Public Relations Pillar Member</p>
                     <p>Leading public relations initiatives and community engagement for the Institution of Engineers Sri Lanka student chapter.</p>
                 </div>
-                
+
                 <div class="volunteer-card">
                     <div class="volunteer-icon">
                         <i class="fas fa-globe"></i>
@@ -865,7 +812,7 @@
                     <p class="volunteer-role">Web Manager</p>
                     <p>Managing web presence and digital platforms for the Chemical Engineering International Conference 2025.</p>
                 </div>
-                
+
                 <div class="volunteer-card">
                     <div class="volunteer-icon">
                         <i class="fas fa-flask"></i>
@@ -874,7 +821,7 @@
                     <p class="volunteer-role">Executive Committee Member</p>
                     <p>Contributing to student activities, academic support, and professional development programs.</p>
                 </div>
-                
+
                 <div class="volunteer-card">
                     <div class="volunteer-icon">
                         <i class="fas fa-hands-helping"></i>
@@ -888,50 +835,36 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section">
+    <section id="contact" class="section bg-alternate">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <div class="section-header">
+                <span class="section-eyebrow">Contact</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
             <div class="contact-content">
 
                 <div class="contact-info">
                     <div class="contact-methods">
-                        <div class="contact-item">
+                        <a href="https://www.linkedin.com/in/kavindu-denuwara-40aab327b/" target="_blank" class="contact-item">
                             <div class="contact-icon">
                                 <i class="fab fa-linkedin"></i>
                             </div>
                             <div class="contact-details">
                                 <h4>LinkedIn</h4>
-                                <a href="https://www.linkedin.com/in/kavindu-denuwara-40aab327b/" target="_blank"><p>Kavindu Denuwara</p></a>
+                                <p>Kavindu Denuwara</p>
                             </div>
-                        </div>
+                        </a>
+                        <a href="mailto:kad.denuwaraeng@gmail.com" class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>kad.denuwaraeng@gmail.com</p>
+                            </div>
+                        </a>
                     </div>
-                    
-                    <div class="contact-visual" style="padding-top: 50px; padding-left: 150px;">
-                        <div class="contact-graphic">
-                            <div class="graphic-element chem">🧪</div>
-                            <div class="graphic-element it">💻</div>
-                            <div class="connection-line"></div>
-                        </div>
-                    </div>
-
-                    <div class="contact-visual" style="margin-top: -100px; margin-left: -300px;">
-                        <div class="contact-graphic">
-                            <div class="graphic-element chem">🧪</div>
-                            <div class="graphic-element it">💻</div>
-                            <div class="connection-line"></div>
-                        </div>
-                    </div>
-
-                    <div class="contact-visual" style="padding-top: 50px; padding-left: 150px;">
-                        <div class="contact-graphic">
-                            <div class="graphic-element chem">🧪</div>
-                            <div class="graphic-element it">💻</div>
-                            <div class="connection-line"></div>
-                        </div>
-                    </div>
-                    
                 </div>
-                
 
                 <div class="contact-form-section">
                     <div class="form-container">
@@ -939,16 +872,16 @@
                             <h3>Send me a message</h3>
                             <p>I'd love to hear from you! Send me a message and I'll respond as soon as possible.</p>
                         </div>
-                        
+
                         <form class="contact-form" action="mailto:kad.denuwaraeng@gmail.com" method="post" enctype="text/plain">
                             <div class="form-group">
-                                <label for="name" class="form-label">Email Address</label>
+                                <label for="name" class="form-label">Your Name</label>
                                 <div class="input-wrapper">
                                     <i class="fas fa-user input-icon"></i>
                                     <input type="text" id="name" name="name" class="form-input" required>
                                 </div>
                             </div>
-                            
+
                             <div class="form-group">
                                 <label for="subject" class="form-label">Subject</label>
                                 <div class="input-wrapper">
@@ -956,7 +889,7 @@
                                     <input type="text" id="subject" name="subject" class="form-input" required>
                                 </div>
                             </div>
-                            
+
                             <div class="form-group">
                                 <label for="message" class="form-label">Message</label>
                                 <div class="input-wrapper">
@@ -964,7 +897,7 @@
                                     <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
                                 </div>
                             </div>
-                            
+
                             <button type="submit" class="submit-btn">
                                 <span class="btn-text">Send Message</span>
                                 <i class="fas fa-paper-plane btn-icon"></i>
@@ -972,8 +905,7 @@
                         </form>
                     </div>
                 </div>
-                
-                
+
             </div>
         </div>
     </section>
