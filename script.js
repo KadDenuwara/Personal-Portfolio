@@ -151,7 +151,7 @@ class RevealManager {
         }, this.observerOptions);
 
         const elementsToObserve = document.querySelectorAll(
-            '.pillar-card, .education-card, .skill-category, .certificate-card, .project-card, .achievement-card, .volunteer-card'
+            '.pillar-card, .timeline-card, .education-card, .skill-category, .certificate-card, .project-card, .achievement-card, .volunteer-card'
         );
 
         elementsToObserve.forEach(el => observer.observe(el));

@@ -508,6 +508,119 @@ img {
 }
 
 /* ===========================
+   Experience (Timeline)
+   =========================== */
+.timeline {
+    position: relative;
+    max-width: 860px;
+    padding-left: 2.25rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0.5rem;
+    bottom: 0.5rem;
+    left: 5px;
+    width: 1px;
+    background: linear-gradient(to bottom, var(--gold-line), var(--border-color) 92%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-marker {
+    position: absolute;
+    top: 0.55rem;
+    left: -2.25rem;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: var(--bg-secondary);
+    border: 2px solid var(--gold);
+}
+
+.timeline-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 1.6rem 1.75rem;
+    transition: var(--transition);
+}
+
+.timeline-card:hover {
+    border-color: var(--gold-line);
+    box-shadow: var(--shadow-md);
+}
+
+.timeline-card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.9rem;
+}
+
+.timeline-role {
+    font-size: 1.05rem;
+    font-weight: 650;
+    color: var(--text-primary);
+    margin-bottom: 0.3rem;
+    line-height: 1.35;
+}
+
+.timeline-company {
+    color: var(--text-muted);
+    font-size: 0.88rem;
+    font-weight: 500;
+}
+
+.timeline-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.25rem;
+    margin-bottom: 0.9rem;
+}
+
+.timeline-meta .duration {
+    margin-bottom: 0;
+}
+
+.timeline-list {
+    list-style: none;
+    margin-bottom: 0.9rem;
+}
+
+.timeline-list:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-list li {
+    padding: 0.3rem 0 0.3rem 1rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    position: relative;
+}
+
+.timeline-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.85rem;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--gold);
+}
+
+/* ===========================
    Education
    =========================== */
 .education-grid {
@@ -1490,6 +1603,23 @@ img {
         display: inline-flex;
     }
 
+    .timeline {
+        padding-left: 1.5rem;
+    }
+
+    .timeline-marker {
+        left: -1.5rem;
+    }
+
+    .timeline-card {
+        padding: 1.35rem;
+    }
+
+    .timeline-card-header {
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+
     .profile-section {
         flex-direction: column;
         text-align: center;
@@ -1559,6 +1689,7 @@ img {
    Reveal on scroll
    =========================== */
 .pillar-card,
+.timeline-card,
 .education-card,
 .skill-category,
 .certificate-card,
@@ -1571,6 +1702,7 @@ img {
 }
 
 .pillar-card.is-visible,
+.timeline-card.is-visible,
 .education-card.is-visible,
 .skill-category.is-visible,
 .certificate-card.is-visible,
@@ -1588,6 +1720,7 @@ img {
     }
 
     .pillar-card,
+    .timeline-card,
     .education-card,
     .skill-category,
     .certificate-card,
