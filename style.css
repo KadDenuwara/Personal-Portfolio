@@ -1,44 +1,64 @@
 /* ===========================
-   CSS Variables — Minimalist Theme
+   CSS Variables — Premium Theme
+   (Ink Navy + Antique Gold, two-color system for light & dark)
    =========================== */
 :root {
-    --accent: #2563eb;
-    --accent-hover: #1d4ed8;
+    /* Core two-color identity */
+    --ink: #10131c;
+    --gold: #a9793a;
+    --gold-hover: #8f6329;
+    --gold-soft: rgba(169, 121, 58, 0.12);
+    --gold-line: rgba(169, 121, 58, 0.35);
 
-    --bg-primary: #ffffff;
-    --bg-secondary: #f7f8fa;
+    --accent: var(--gold);
+    --accent-hover: var(--gold-hover);
+
+    --bg-primary: #faf8f4;
+    --bg-secondary: #f1ede3;
     --bg-card: #ffffff;
 
-    --text-primary: #14171f;
-    --text-secondary: #4b5262;
-    --text-muted: #7a8194;
-    --text-inverse: #ffffff;
+    --text-primary: var(--ink);
+    --text-secondary: #4c4f5c;
+    --text-muted: #82838f;
+    --text-inverse: #faf8f4;
 
-    --border-color: #e6e8ec;
+    --border-color: #e5ddcd;
 
-    --shadow-sm: 0 1px 2px rgba(16, 20, 30, 0.04);
-    --shadow-md: 0 6px 20px rgba(16, 20, 30, 0.06);
+    --shadow-sm: 0 1px 2px rgba(16, 14, 8, 0.05);
+    --shadow-md: 0 10px 30px rgba(16, 14, 8, 0.07);
+    --shadow-gold: 0 10px 30px rgba(169, 121, 58, 0.16);
 
     --radius: 10px;
-    --transition: all 0.2s ease;
+    --transition: all 0.25s ease;
     --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-display: 'Fraunces', 'Georgia', serif;
 
     --max-width: 1080px;
 }
 
 [data-theme="dark"] {
-    --bg-primary: #0e1015;
-    --bg-secondary: #14171f;
-    --bg-card: #171a22;
+    --gold: #d4a95e;
+    --gold-hover: #e6bd76;
+    --gold-soft: rgba(212, 169, 94, 0.1);
+    --gold-line: rgba(212, 169, 94, 0.28);
 
-    --text-primary: #eef0f4;
-    --text-secondary: #b0b5c2;
-    --text-muted: #7a8194;
+    --accent: var(--gold);
+    --accent-hover: var(--gold-hover);
 
-    --border-color: #262a35;
+    --bg-primary: #0a0c12;
+    --bg-secondary: #10131b;
+    --bg-card: #12151e;
 
-    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
-    --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.35);
+    --text-primary: #f3efe6;
+    --text-secondary: #b7b9c4;
+    --text-muted: #7d8090;
+    --text-inverse: #10131c;
+
+    --border-color: #22252f;
+
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
+    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.4);
+    --shadow-gold: 0 10px 34px rgba(212, 169, 94, 0.1);
 }
 
 /* ===========================
@@ -69,6 +89,20 @@ body, .navbar, .form-input, .form-textarea, .skill-tag, .tag {
 
 a {
     color: inherit;
+}
+
+::selection {
+    background: var(--gold-soft);
+    color: var(--text-primary);
+}
+
+.hero-title,
+.section-title,
+.certificate-title,
+.competition-name,
+.form-header h3 {
+    font-family: var(--font-display);
+    font-weight: 600;
 }
 
 .container {
@@ -122,12 +156,12 @@ img {
 
 .brand-tagline {
     display: block;
-    font-size: 0.7rem;
-    font-weight: 500;
-    color: var(--text-muted);
-    letter-spacing: 0.03em;
+    font-size: 0.68rem;
+    font-weight: 600;
+    color: var(--gold);
+    letter-spacing: 0.08em;
     text-transform: uppercase;
-    margin-top: 1px;
+    margin-top: 2px;
 }
 
 .nav-menu {
@@ -210,17 +244,21 @@ img {
 }
 
 .profile-image-wrapper {
+    position: relative;
     width: 176px;
     height: 176px;
     border-radius: 50%;
     overflow: hidden;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--gold-line);
+    padding: 5px;
+    box-shadow: var(--shadow-gold);
 }
 
 .profile-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 50%;
 }
 
 .profile-info {
@@ -230,13 +268,23 @@ img {
 }
 
 .eyebrow {
-    display: inline-block;
-    font-size: 0.8rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.78rem;
     font-weight: 600;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 0.9rem;
+    color: var(--gold);
+    margin-bottom: 1.1rem;
+}
+
+.eyebrow::before {
+    content: '';
+    display: inline-block;
+    width: 28px;
+    height: 1px;
+    background: var(--gold);
 }
 
 .hero-title {
@@ -278,22 +326,26 @@ img {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.7rem 1.35rem;
+    padding: 0.75rem 1.5rem;
     border-radius: 8px;
     text-decoration: none;
     font-weight: 600;
-    font-size: 0.92rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.01em;
     transition: var(--transition);
     border: 1px solid transparent;
 }
 
 .cta-button.primary {
-    background: var(--accent);
+    background: var(--gold);
     color: var(--text-inverse);
+    box-shadow: var(--shadow-gold);
 }
 
 .cta-button.primary:hover {
-    background: var(--accent-hover);
+    background: var(--gold-hover);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-gold), var(--shadow-md);
 }
 
 .cta-button.secondary {
@@ -303,8 +355,9 @@ img {
 }
 
 .cta-button.secondary:hover {
-    border-color: var(--accent);
-    color: var(--accent);
+    border-color: var(--gold);
+    color: var(--gold);
+    transform: translateY(-1px);
 }
 
 .scroll-indicator {
@@ -327,18 +380,28 @@ img {
 }
 
 .section-eyebrow {
-    display: block;
-    font-size: 0.78rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.76rem;
     font-weight: 700;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 0.6rem;
+    color: var(--gold);
+    margin-bottom: 0.75rem;
+}
+
+.section-eyebrow::before {
+    content: '';
+    display: inline-block;
+    width: 28px;
+    height: 1px;
+    background: var(--gold);
 }
 
 .section-title {
-    font-size: clamp(1.6rem, 3vw, 2.1rem);
-    font-weight: 700;
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 600;
     letter-spacing: -0.01em;
     color: var(--text-primary);
 }
@@ -375,6 +438,30 @@ img {
     border: 1px solid var(--border-color);
     border-radius: var(--radius);
     padding: 1.75rem;
+    position: relative;
+    transition: var(--transition);
+}
+
+.pillar-card::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 1.75rem;
+    right: 1.75rem;
+    height: 2px;
+    background: var(--gold);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.pillar-card:hover {
+    border-color: var(--gold-line);
+    box-shadow: var(--shadow-md);
+}
+
+.pillar-card:hover::before {
+    transform: scaleX(1);
 }
 
 .pillar-icon {
@@ -455,6 +542,12 @@ img {
     border: 1px solid var(--border-color);
     border-radius: var(--radius);
     padding: 1.6rem;
+    transition: var(--transition);
+}
+
+.education-card:hover {
+    border-color: var(--gold-line);
+    box-shadow: var(--shadow-md);
 }
 
 .card-header {
@@ -509,9 +602,9 @@ img {
 }
 
 .status-badge.current {
-    background: rgba(37, 99, 235, 0.08);
-    color: var(--accent);
-    border-color: rgba(37, 99, 235, 0.2);
+    background: var(--gold-soft);
+    color: var(--gold);
+    border-color: var(--gold-line);
 }
 
 .card-body {
@@ -553,6 +646,12 @@ img {
     font-size: 0.78rem;
     font-weight: 500;
     border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.specialization-tag:hover {
+    border-color: var(--gold-line);
+    color: var(--gold);
 }
 
 .achievement-details {
@@ -589,6 +688,12 @@ img {
     border: 1px solid var(--border-color);
     border-radius: var(--radius);
     padding: 1.6rem;
+    transition: var(--transition);
+}
+
+.skill-category:hover {
+    border-color: var(--gold-line);
+    box-shadow: var(--shadow-md);
 }
 
 .category-header {
@@ -623,6 +728,12 @@ img {
     font-size: 0.85rem;
     font-weight: 500;
     border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.skill-tag:hover {
+    border-color: var(--gold-line);
+    color: var(--gold);
 }
 
 /* ===========================
@@ -641,6 +752,12 @@ img {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    transition: var(--transition);
+}
+
+.certificate-card:hover {
+    border-color: var(--gold-line);
+    box-shadow: var(--shadow-md);
 }
 
 .certificate-image-container {
@@ -748,6 +865,12 @@ img {
     font-size: 0.75rem;
     font-weight: 500;
     border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.cert-skill-tag:hover {
+    border-color: var(--gold-line);
+    color: var(--gold);
 }
 
 .certificate-actions {
@@ -807,6 +930,12 @@ img {
     border: 1px solid var(--border-color);
     border-radius: var(--radius);
     padding: 1.75rem;
+    transition: var(--transition);
+}
+
+.project-card:hover {
+    border-color: var(--gold-line);
+    box-shadow: var(--shadow-md);
 }
 
 .project-icon {
@@ -850,6 +979,12 @@ img {
     font-size: 0.78rem;
     font-weight: 500;
     border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.tag:hover {
+    border-color: var(--gold-line);
+    color: var(--gold);
 }
 
 /* ===========================
@@ -876,6 +1011,12 @@ img {
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
+    transition: var(--transition);
+}
+
+.achievement-card:hover {
+    border-color: var(--gold-line);
+    box-shadow: var(--shadow-md);
 }
 
 .achievement-card.expanded {
@@ -1077,6 +1218,12 @@ img {
     border: 1px solid var(--border-color);
     border-radius: var(--radius);
     padding: 1.75rem;
+    transition: var(--transition);
+}
+
+.volunteer-card:hover {
+    border-color: var(--gold-line);
+    box-shadow: var(--shadow-md);
 }
 
 .volunteer-icon {
@@ -1129,6 +1276,18 @@ img {
     border: 1px solid var(--border-color);
     border-radius: var(--radius);
     padding: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-form-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--gold), transparent 85%);
 }
 
 .form-header {
@@ -1194,7 +1353,8 @@ img {
 
 .form-input:focus,
 .form-textarea:focus {
-    border-color: var(--accent);
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px var(--gold-soft);
 }
 
 .form-textarea {
@@ -1289,11 +1449,11 @@ img {
    Footer
    =========================== */
 .footer {
-    background: var(--bg-primary);
-    color: var(--text-muted);
+    background: var(--ink);
+    color: rgba(250, 248, 244, 0.55);
     text-align: center;
-    padding: 2rem 0;
-    border-top: 1px solid var(--border-color);
+    padding: 2.25rem 0;
+    border-top: 1px solid var(--gold-line);
     font-size: 0.85rem;
 }
 
